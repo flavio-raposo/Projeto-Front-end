@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+<link rel="stylesheet" href="style.css">
+
+<!------------------LIght BOx for Gallery-------------->
+<link rel="stylesheet" href="lightbox.min.css">
+<script type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
+<!------------------LIght BOx for Gallery-------------->
+<title>Application-1</title>
+</head>
+<body>
+
+
+    <!-------------------------------Navigation Starts------------------>
+
+    <nav class="navbar navbar-expand-md navbar-dark mb-4" style="background-color:#000000">
+        <a href="index.html" class="navbar-brand"><img src="img/brand-white.png" alt="logo da Vault" class="img-fluid" width="80px" height="100px"></a>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#responsive"
+            style="background-color:rgb(0, 0, 0)" aria-label="Menu">
+            <span class="navbar-toggler-icon" role="button" aria-label="Menu"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="responsive">
+            <ul class="navbar-nav mr-auto text-capitalize">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Início</a></li>
+                <li class="nav-item"><a href="profile.html" class="nav-link">Perfil</a></li>
+                <li class="nav-item"><a href="#modalview" class="nav-link" data-toggle="modal">Mensagens</a></li>
+                <li class="nav-item"><a href="notification.html" class="nav-link">Documentos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-md-none">Reclamações</a></li>
+                <li class="nav-item"><a href="#" class="nav-link d-md-none">Sair</a></li>
+
+            </ul>
+
+            <form action="" class="form-inline ml-auto d-none d-md-block">
+                <input type="text" name="pesquisar" id="pesquisar" placeholder="pesquisar" class="form-control form-control-sm">
+            </form>
+            <a href="notification.html" class="text-decoration-none" style="color:#ffffff;font-size:22px;"><i class="far fa-bell ml-3 d-none d-md-block"></i></a> 
+            <img src="img/avatar-dhg.png" alt="Personagem encapuzado em cenário urbano" class="rounded-circle ml-3 d-none d-md-block" width="32px" height="32px">
+
+
+
+
+
+        </div>
+
+
+
+
+
+    </nav>
+
+    <!---------------------------------------------Ends navigation------------------------------>
+
+    <!---------------------------Modal Section  starts------------------->
+
+    <div class="modal fade" id="modalview">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+
+            <div class="modal-content">
+
+
+                <div class="modal-header">
+                    <div class="modal-title h4">Mensagens</div>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Mensagens">&times;</button>
+                </div>
+
+
+                <div class="modal-body">
+
+
+                    <ul class="list-unstyled">
+
+
+                     <a href="#" class="text-decoration-none">
+                        <li class="media hover-media">
+                           
+                                <img src="img/avatar-dhg.png" alt="Personagem encapuzado em cenário urbano" width="60px" height="60px" class="rounded-circle mr-3">
+
+                                <div class="media-body text-dark">
+                                        <h6 class="media-header">NeonNomad e <strong> 1 outros</strong></h6>
+                                        <p class="media-text">Pessoal, deem uma olhada nesse fanart que eu fiz inspirado na clássica cena de chuva do filme Blade Runner. A estética noir sempre me inspira!</p>
+
+                                </div>
+
+                        </li>
+                    </a>
+                    <hr class="my-3">
+
+
+                    
+                    <a href="#" class="text-decoration-none">
+                            <li class="media hover-media">
+                               
+                                    <img src="img/avatar-fat.jpg" alt="Crânio humano usando óculos de realidade virtual" width="60px" height="60px" class="rounded-circle mr-3">
+    
+                                    <div class="media-body text-dark">
+                                            <h6 class="media-header">CircuitSculptor e <strong> 3 outros</strong></h6>
+                                            <p class="media-text">Explorando as interseções entre tecnologia e rebeldia, pronto para mergulhar de cabeça na cultura cyberpunk.</p>
+    
+                                    </div>
+    
+                            </li>
+                        </a>
+
+
+                        <hr class="my-3">
+
+
+                        <a href="#" class="text-decoration-none">
+                            <li class="media hover-media">
+                               
+                                    <img src="img/avatar-mdo.png" alt="Garota com óculos futurista" width="60px" height="60px" class="rounded-circle mr-3">
+    
+                                    <div class="media-body text-dark">
+                                            <h6 class="media-header">TechTribalist e <strong> 5 outros</strong></h6>
+                                            <p class="media-text">Advogando por um mundo onde megacorporações e hackers colidem, tudo sob o céu de uma metrópole distópica.</p>
+    
+                                    </div>
+    
+                            </li>
+                        </a>
+
+                        <hr class="my-3">
+
+
+                        <a href="#" class="text-decoration-none">
+                                <li class="media hover-media">
+                                   
+                                        <img src="img/avatar-dhg.png" alt="Personagem encapuzado em cenário urbano" width="60px" height="60px" class="rounded-circle mr-3">
+        
+                                        <div class="media-body text-dark">
+                                                <h6 class="media-header">NeonNomad e <strong> 1 outros</strong></h6>
+                                                <p class="media-text">Sonhando com implantes cibernéticos e uma vida à margem das regras tradicionais, em busca da autêntica experiência cyberpunk.</p>
+        
+                                        </div>
+        
+                                </li>
+                            </a>
+                            <hr class="my-3">
+        
+        
+                            
+                            <a href="#" class="text-decoration-none">
+                                    <li class="media hover-media">
+                                       
+                                            <img src="img/avatar-fat.jpg" alt="Crânio humano usando óculos de realidade virtual" width="60px" height="60px" class="rounded-circle mr-3">
+            
+                                            <div class="media-body text-dark">
+                                                    <h6 class="media-header">CircuitSculptor e <strong> 3 outros</strong></h6>
+                                                    <p class="media-text">Abraçando a fusão entre caos urbano e alta tecnologia, em busca de uma sociedade onde a anomalia seja a norma</p>
+            
+                                            </div>
+            
+                                    </li>
+                                </a>
+        
+        
+                                <hr class="my-3">
+        
+        
+                                <a href="#" class="text-decoration-none">
+                                    <li class="media hover-media">
+                                       
+                                            <img src="img/avatar-mdo.png" alt="Garota com óculos futurista" width="60px" height="60px" class="rounded-circle mr-3">
+            
+                                            <div class="media-body text-dark">
+                                                    <h6 class="media-header">TechTribalist e <strong> 5 outros</strong></h6>
+                                                    <p class="media-text">Dêem uma olhada na minha última foto, pessoal! As ruas repletas de neon e os hologramas dançando são a definição de #CyberpunkVibes! </p>
+            
+                                            </div>
+            
+                                    </li>
+                                </a>
+
+                        
+                                <hr class="my-3">
+                                <a href="#" class="text-decoration-none">
+                                        <li class="media hover-media">
+                                           
+                                                <img src="img/avatar-dhg.png" alt="Personagem encapuzado em cenário urbano" width="60px" height="60px" class="rounded-circle mr-3">
+                
+                                                <div class="media-body text-dark">
+                                                        <h6 class="media-header">NeonNomad e <strong> 1 outros</strong></h6>
+                                                        <p class="media-text">Ei, galera! Estou organizando um meetup temático no próximo fim de semana. Vamos nos perder na noite, mergulhar nas sombras e celebrar o melhor do estilo #Cyberpunk! Quem está dentro?</p>
+                
+                                                </div>
+                
+                                        </li>
+                                    </a>
+                                    <hr class="my-3">
+                
+                
+                                    
+                                    <a href="#" class="text-decoration-none">
+                                            <li class="media hover-media">
+                                               
+                                                    <img src="img/avatar-fat.jpg" alt="Crânio humano usando óculos de realidade virtual" width="60px" height="60px" class="rounded-circle mr-3">
+                    
+                                                    <div class="media-body text-dark">
+                                                            <h6 class="media-header">CircuitSculptor e <strong> 3 outros</strong></h6>
+                                                            <p class="media-text">Galera, descobri uma loja online que vende roupas e acessórios cyberpunk autênticos. Fiz uma compra e estou ansioso para o visual novo! </p>
+                    
+                                                    </div>
+                    
+                                            </li>
+                                        </a>
+                
+                
+                                        <hr class="my-3">
+                
+                
+                                        <a href="#" class="text-decoration-none">
+                                            <li class="media hover-media">
+                                               
+                                                    <img src="img/avatar-mdo.png" alt="Garota com óculos futurista" width="60px" height="60px" class="rounded-circle mr-3">
+                    
+                                                    <div class="media-body text-dark">
+                                                            <h6 class="media-header">TechTribalist and <strong> 5 others</strong></h6>
+                                                            <p class="media-text">Só eu que acho que os edifícios futuristas de Tóquio são a representação da cultura cyberpunk na vida real? Quem mais sonha em caminhar por aquelas ruas?#TokyoDreaming</p>
+                    
+                                                    </div>
+                    
+                                            </li>
+                                        </a>
+    
+    
+
+
+                    </ul>
+
+
+
+                    
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <!-------------------------------Modal Ends---------------------------->
+
+
+
+    <!-------------------------------------------Start Grids layout for lg-xl-3 columns and (xs-lg 1 columns)--------------------------------->
+
+
+    <div class="container">
+        <div class="row">
+
+
+            <!--------------------------left columns  start-->
+
+            <div class="col-12 col-lg-3">
+
+                <div class="left-column">
+
+
+                    <div class="card card-left1 mb-4" >
+                        <img src="img/photo-1455448972184-de647495d428.jpg" alt="Indivíduo encapuzado sozinho diante de horizonte rubano" class="card-img-top img-fluid">
+                        <div class="card-body text-center ">
+                            <img src="img/avatar-dhg.png" alt="Personagem encapuzado em cenário urbano" width="120px" height="120px" class="rounded-circle mt-n5">
+                            <h5 class="card-title">NeonNomad</h5>
+                            <p class="card-text text-justify mb-2">Navegando entre neon e circuitos, apaixonado por um futuro onde a estética cyberpunk redefina nossa realidade.</p>
+                            <ul class="list-unstyled nav justify-content-center">
+                               <a href="#" class="text-dark text-decoration-none"> <li class="nav-item">Aliados V<br> <strong>2K</strong></li></a>
+                              <a href="#" class="text-dark text-decoration-none"> <li class="nav-item">S Inimigos <br> <strong>88</strong></li></a> 
+                            </ul>
+
+                        </div>
+
+
+
+
+                    </div>
+
+
+                    <div class="card shadow-sm card-left2 mb-4">
+
+                        <div class="card-body">
+
+                                <h5 class="mb-3 card-title">Sobre <small><a href="#" class="ml-1">Editar</a></small></h5>
+
+                                <p class="card-text"> <i class="fas fa-calendar-week mr-2"></i> Viajou para <a href="#" class="text-decoration-none">Tóquio</a></p>
+
+                                <p class="card-text"> <i class="fas fa-user-friends mr-2"></i> Tornou-se amigo de <a href="#" class="text-decoration-none">CyberRogue</a></p>
+                                <p class="card-text"> <i class="far fa-building mr-2"></i> Trabalha em <a href="#" class="text-decoration-none">Arasaka Corporation</a></p>
+                                <p class="card-text"> <i class="fas fa-home mr-2"></i> Mora em <a href="#" class="text-decoration-none">Detroit</a></p>
+                                <p class="card-text"> <i class="fas fa-map-marker mr-2"></i> de <a href="#" class="text-decoration-none">Pernambuco, Brasil</a></p>
+
+
+
+
+                        </div>
+                     
+
+
+
+
+                    </div>
+
+
+
+
+                    <div class="card shadow-sm card-left3 mb-4">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Fotos<small class="ml-2"><a href="#">.Editar </a></small></h5>
+                            
+                            <div class="row">
+                                <div class="col-6 p-1">
+                                    <a href="img/left1.jpg" data-lightbox="id" ><img src="img/left1.jpg" alt="Garota com cabelo punk, usando jaqueta de couro e capacete futurista" class="img-fluid my-2"></a>  
+                                    <a href="img/left2.jpg"data-lightbox="id"><img src="img/left2.jpg" alt="Garota de óculos escuros, headset e jaqueta de couro" class="img-fluid my-2"></a>
+                                    <a href="img/left3.jpg"data-lightbox="id"><img src="img/left3.jpg" alt="Garota asiática com capacete tático futurista" class="img-fluid my-2"></a>
+
+                                </div>
+
+
+                                <div class="col-6 p-1">
+                                        <a href="img/left4.jpg"data-lightbox="id"><img src="img/left4.jpg" alt="Homem de óculos pretos e dreads no cabelo" class="img-fluid my-2"></a>
+                                        <a href="img/left5.jpg"data-lightbox="id"><img src="img/left5.jpg" alt="Garota com jaqueta de couro, óculos largos e dreads no cabelo" class="img-fluid my-2"></a>
+                                        <a href="img/left6.jpg"data-lightbox="id"><img src="img/left6.jpg" alt="Garota com jaqueta militar e vários implantes futuristas" class="img-fluid my-2"></a>
+    
+                                    </div>
+
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+
+                        </div>
+
+
+
+
+                   
+
+                    
+
+
+
+
+
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+ <!--------------------------Ends Left columns-->
+
+
+
+
+
+ <!---------------------------------------Middle columns  start---------------->
+
+
+
+            
+            <div class="col-12 col-lg-6" >
+
+
+                <div class="middle-column">
+
+
+                    <div class="card" >
+
+
+                        <div class="card-header bg-transparent">
+                            <form class="form-inline">
+
+
+                                <div class="input-group w-100">
+                                 <input type="text" name="Mensagem" id="Mensagem" placeholder="Mensagem" class="form-control form-control-md">
+
+                                 <div class="input-group-append">
+                                        <div class="input-group-text">
+                                                <i class="fas fa-camera"></i>
+                                            </div>
+
+
+                                 </div>
+
+                                </div>
+
+
+
+                        
+                                
+                               
+                            </form>
+
+                        </div>
+
+
+
+
+
+
+                           
+   <div class="card-body">
+
+    <div class="media">
+        <img src="img/avatar-dhg.png" alt="Personagem encapuzado em cenário urbano" width="55px" height="55px" class="rounded-circle mr-3">
+
+        <div class="media-body">
+            <h5>NeonNomad</h5>
+            <p class="card-text text-justify">Hoje, compartilho com vocês minha visão, minha jornada através dos labirintos digitais e analógicos. Estas imagens, capturadas com o desejo de transmitir a pulsação eletrônica que percorre nossas veias, são minha homenagem a um estilo de vida que desafia o convencional. Nas próximas postagens, convido vocês a mergulharem de cabeça em uma realidade onde o futuro e o passado se unem, onde a beleza surge da decadência, e onde o virtual e o material dançam em perfeita sincronia.</p>
+
+           
+
+            <div class="row no-gutters mb-3">
+                <div class="col-6 p-1 text-center">
+
+                        <img src="img/adventure-alps-clouds-2259810.jpg" alt="landscape de cidade cyberpunk" class="img-fluid mb-2">
+                        <img src="img/aerial-view-architectural-design-buildings-2228123.jpg" alt="Garota com roupas futurísticas" class="img-fluid">
+            
+
+                </div>
+
+                <div class="col-6 p-1 text-center">
+
+                        <img src="img/celebration-colored-smoke-dark-2297472.jpg" alt="Homem com roupas futurísticas" class="img-fluid mb-2">
+                        <img src="img/bodybuilding-exercise-fitness-2294361.jpg" alt="Garota de cabelo rosa e corpo robótico que está rasgando sua pele humana"class="img-fluid">
+            
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+        
+            <div class="media mb-3">
+                    <img src="img/avatar-dhg.png" alt="Personagem encapuzado em cenário urbano" width="45px" height="45px" class="rounded-circle mr-2">
+                    <div class="media-body">
+                            <p class="card-text text-justify">NeonNomad: Imerso na estética cyberpunk, busco capturar sua essência rebelde e tecnológica em minhas fotos. A fusão de elementos distópicos e high-tech me fascina, e cada clique é uma resistência à uniformidade. Compartilho imagens que refletem a dualidade da vida urbana, desafiando o convencional e convidando todos a explorar o ciberespaço. Minhas postagens serão uma jornada por um mundo onde passado e futuro convergem, beleza surge da decadência e realidade virtual e material se entrelaçam em harmonia.</p>
+
+                    </div>
+
+
+            </div>
+
+            
+            <div class="media">
+                    <img src="img/avatar-mdo.png" alt="Garota com óculos futurista" width="45px" height="45px" class="rounded-circle mr-2">
+                    <div class="media-body">
+                            <p class="card-text text-justify">TechTribalist: Incrível, amigo! Adoro como você captura a essência dessa estética futurista. Aquele tom azul neon está simplesmente matador.</p>
+
+                    </div>
+
+
+            </div>
+
+            
+            
+
+
+
+        </div>
+        <small>5min</small>
+        
+
+
+    </div>
+
+
+    
+
+
+
+   </div>
+
+                            
+                             
+ <hr>
+
+<div class="card-body">
+
+    <div class="media">
+            <img src="img/avatar-fat.jpg" alt="Crânio humano usando óculos de realidade virtual" width="55px" height="55px" class="rounded-circle mr-3">
+
+        <div class="media-body">
+                <h5>CircuitSculptor</h5>
+                <p class="text-justify">Às margens da realidade convencional, mergulho nas sombras luminosas do amanhã. A estética cyberpunk é mais do que uma simples paleta de cores e engrenagens futuristas; é um chamado à rebeldia tecnológica que ecoa no coração de cada fio de código. A fusão de elementos distópicos e high-tech me envolve como um abraço eletrônico, desafiando o presente e abrindo portas para um mundo onde megacorporações ditam as regras, hackers são heróis e neon dança nas ruas como estrelas cadentes em uma noite eterna.</p>
+
+
+
+        </div>
+
+        <small>14 min</small>
+
+    </div>
+
+
+
+
+
+</div>
+<hr>
+
+<div class="card-body">
+
+    <div class="media">
+
+            <img src="img/avatar-mdo.png" alt="Garota com óculos futurista" width="55px" height="55px" class="rounded-circle mr-3">
+            <div class="media-body">
+                <h5>TechTribalist</h5>
+                <p class="text-justify">Vivendo à margem da normalidade, eu acolho a vibração cyberpunk como um chamado à revolta tecnológica. Me perco nas entranhas urbanas, capturando como o caos e a harmonia se entrelaçam. Minha jornada fotográfica visa congelar a fusão da humanidade com a máquina. Compartilho imagens que celebram um estilo de vida rebelde, desafiando a mesmice. Convido a todos a explorar um universo onde passado e futuro se misturam, beleza surge da decadência e o virtual se mescla ao físico. Preparem-se para uma jornada alucinante de sombras, luzes e cultura cyberpunk.</p>
+             <a href="img/5.jpg" data-lightbox="id"><img src="img/mid5.jpg" alt="Garota encapuzada em beco de cidade com luzes de neon" class="img-fluid shadow-sm img-thumbnail">   </a>   
+
+            </div>
+
+
+            <small class="text-muted">10 min</small>
+
+
+
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
+                     
+                           
+
+ </div>
+
+
+
+
+
+
+
+
+
+ </div>
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  <br> <br> <br><br> <br> <br>
+
+<!------------------------Middle column Ends---------------->
+
+
+
+
+
+
+
+
+<!---------------------------Statrs Right Columns----------------->
+
+
+                
+<div class="col-12 col-lg-3">
+
+
+    <div class="right-column">
+
+        <div class="card shadow-sm mb-4" >
+            <div class="card-body">
+                <h6 class="card-title">Patrocinado</h6>
+                <img src="img/right1.jpg" alt="Foto noturna de prédios famosos da cidade americana de Detroit " class="card-img mb-3">
+                <p class="card-text text-justify"> <span class="h6">Parece que está na hora de dar um pulo nas ruas intensas de Detroit, assim como em "RoboCop". Detroit tem aquela vibe intensa e tudo tem um ar de dureza e estilo. E dizem por aí que o pessoal aqui pode ter essa aparência durona, mas nem todos são assim tão ruins. Então, o que você está esperando, parceiro? É hora de mergulhar nessa selva urbana!</p>
+                <a href="#" class="btn btn-outline-info card-link btn-sm">Compre uma passagem</a>
+
+
+            </div>
+
+        </div>
+
+
+        <div class="card shadow-sm mb-4">
+
+            <div class="card-body">
+
+                    <h6 class="card-title ">Likes <a href="#" class="ml-1"><small>.Ver tudo</small> </a> </h6>
+                    <div class="row no-gutters d-none d-lg-flex">
+                        <div class="col-6 p-1">
+                                <img src="img/avatar-dhg.png" alt="Personagem encapuzado em cenário urbano" width="80px" height="80px" class="rounded-circle mb-4">
+                                <img src="img/avatar-fat.jpg" alt="Crânio humano usando óculos de realidade virtual" width="80px" height="80px" class="rounded-circle">
+
+
+
+                        </div>
+                        <div class="col-6 p-1 text-left">
+                            <h6>NeonNomad@cyberpunk</h6>
+                            <a href="#" class="btn btn-outline-info btn-sm mb-3"><i class="fas fa-user-friends"></i>Seguir </a>
+
+                            <h6>CircuitSculptor</h6>
+                            <a href="#" class="btn btn-outline-info  btn-sm"><i class="fas fa-user-friends"></i>Seguir </a>
+
+                        </div>
+
+                    </div>
+
+            </div>
+
+            <div class="card-footer">
+
+                <p class="lead" style="font-size:18px;">Acabei de encontrar essa playlist de synthwave e retrowave que é pura inspiração cyberpunk. Compartilhando o link para vocês entrarem na vibe!</p>
+            </div>
+            
+
+
+        </div>
+
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <p>&copy; 2018 Bootstrap
+
+
+
+                        <a href="#">Sobre</a>
+                        <a href="#">Ajuda</a>
+                        <a href="#">Termos</a>
+                        <a href="#">Privacidade</a>
+                        <a href="#">Cookies</a>
+                        <a href="#">Ads </a>
+                        <a href="#">Info</a>
+                        <a href="#">Marcas</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Estatus</a>
+                        <a href="#">Apps</a>
+                        <a href="#">Carreiras</a>
+                        <a href="#">Publicidade</a>
+                    
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                </p>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+</div>
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------------------------Light BOx OPtions------------->
+<script>
+        lightbox.option({
+          
+        })
+    </script>
+
+
+
+<!------------------------Light BOx OPtions------------->
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
